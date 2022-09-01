@@ -9,6 +9,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AppNavbar from "./Components/AppNavbar";
 import Footer from "./Components/Footer"
 import ServicePage from "./Pages/ServicePage"
+import OurOffices from "./Pages/OurOffices";
+import Aboutus from "./Pages/Aboutus";
+
 
 function App() {
   return (
@@ -22,6 +25,12 @@ function App() {
           </Route>
           <Route  path="/service">
             <ServicePage/>
+          </Route>
+          <Route  path="/aboutus">
+            <Aboutus/>
+          </Route>
+          <Route  path="/ouroffices">
+            <OurOffices/>
           </Route>
         </Switch>
       </div>

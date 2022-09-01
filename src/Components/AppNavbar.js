@@ -8,8 +8,18 @@ import {
   Link
 } from "react-router-dom";
 // import {BrowserRouter as Router, Routes, Route} from 'react-router-dom
+import ServicePage from "../Pages/ServicePage"
 
+const style ={
+  backgroundColor: "white",
+  color: "black",
+  // border: "2px solid green",
+  padding: "10px 20px",
+  textAlign: "center",
+  textDecoration : "none",
+  display: "inline-block"
 
+}
 
 function AppNavbar() {
   return (
@@ -20,11 +30,13 @@ function AppNavbar() {
           <Navbar.Brand href="#home">XYZ Textiles</Navbar.Brand>
           <Nav >
 
-          <Nav.Link to="/">Home</Nav.Link>
-            <Nav.Link >Contact us</Nav.Link>{" "}
-            <Nav.Link >Our offices</Nav.Link>
-            <Nav.Link >About us</Nav.Link>
+          <Nav.Link to="/services"> <Link to="/" style={style}>Home</Link></Nav.Link>
+            <Nav.Link > <Link to="/service" style={style}>Our services</Link></Nav.Link>{" "}
+            <Nav.Link ><Link to="/aboutus" style={style}>About us</Link></Nav.Link>
+            <Nav.Link > <Link to="/ouroffices" style={style}>Our offices</Link></Nav.Link>
+            
           </Nav>
+
         </Container>
       </Navbar>
     </div>
